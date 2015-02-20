@@ -1,0 +1,6 @@
+messages:
+  enabled: "&6Enabled &c{0}&6 walking effect!"
+  incorrecttype: "&4{0}&c is not a correct trail type!"
+  disabled: "&6Disabled walking effects!"
+  nopermission: "&cYou don't have permission for that!"
+

@@ -1,0 +1,18 @@
+name: "ExcelsionParticles"
+main: com.radthorne.ExcelsionParticles.ExcelsionParticles
+version: 1.0
+description: "Excelsion Particles plugin for the Excelsion server"
+author: "kukelekuuk00"
+commands:
+  trail:
+    description: Walking Effects
+    aliases: [extrail, walkeffect, exwalkeffect]
+    permission: excelsionparticles.trail
+    
+permissions:
+  excelsionparticles.*:
+    default: op
+    description: Gives player all the permissions.
+  excelsionparticles.trail.all:
+    default: false
+    description: Gives player permission to use trails.

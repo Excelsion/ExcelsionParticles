@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ExcelsionParticles">
+    <output-path>$PROJECT_DIR$/out/artifacts/ExcelsionParticles</output-path>
+    <root id="archive" name="ExcelsionParticles.jar">
+      <element id="module-output" name="ExcelsionParticles" />
+    </root>
+  </artifact>
+</component>
