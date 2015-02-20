@@ -1,21 +1,11 @@
 package com.radthorne.ExcelsionParticles;
 
 import com.radthorne.ExcelsionParticles.ExcelsionParticles.TrailType;
-import net.minecraft.server.v1_7_R3.EntityFireworks;
-import org.bukkit.*;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.craftbukkit.v1_7_R3.CraftServer;
-import org.bukkit.craftbukkit.v1_7_R3.CraftWorld;
-import org.bukkit.craftbukkit.v1_7_R3.entity.CraftFirework;
-import org.bukkit.craftbukkit.v1_7_R3.entity.CraftWolf;
-import org.bukkit.craftbukkit.v1_7_R3.inventory.CraftItemStack;
-import org.bukkit.entity.Firework;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
-
-import java.sql.Ref;
 
 import static com.radthorne.ExcelsionParticles.MessageHandler.msg;
 
@@ -42,16 +32,6 @@ public class CommandHandler implements CommandExecutor
                     if ( args[0].equalsIgnoreCase( "list" ) )
                     {
                         showList( player );
-                    }
-                    else if ( args[0].equalsIgnoreCase( "test" ) )
-                    {
-                        Location loc = player.getLocation();
-                        float speed = Float.parseFloat( args[1] );
-                        int amount = Integer.parseInt( args[2] );
-                        net.minecraft.server.v1_7_R3.World world = (net.minecraft.server.v1_7_R3.World) loc.getWorld();
-                        world.a( );
-                        net.minecraft.server.v1_7_R3.ItemStack nis = CraftItemStack.asNMSCopy( new ItemStack( Material.FIREWORK ) );
-                        ParticleEffect.FIREWORKS_SPARK.display( loc.add( 1F, 1F, 1F ), 0.2F, 0.1F, 0.2F, speed, amount );
                     }
                     else
                     {
